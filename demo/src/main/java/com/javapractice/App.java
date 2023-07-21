@@ -38,9 +38,25 @@ public class App
         terminalInput.close();
     }
 
+    private static void RunTask3()
+    {
+        Scanner in = new Scanner(System.in);
+        String[] data = in.nextLine().split(" ");
+        int[] vertex = new int[data.length];
+        for (int i = 0; i < data.length; i++) {
+            vertex[i] = Integer.parseInt(data[i]);
+        }
+
+        TriangleChecker triangle_checker = new TriangleChecker(vertex);
+        triangle_checker.isTriangle();
+
+        in.close();
+    }
+
     public static void main( String[] args )
     {
         // RunTask1();
-        RunTask2();
+        // RunTask2();
+        RunTask3();
     }
 }

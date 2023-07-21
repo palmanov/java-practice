@@ -1,12 +1,7 @@
 package com.javapractice;
 
 import java.util.Scanner;
-import com.javapractice.Soda;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     private static void RunTask1()
